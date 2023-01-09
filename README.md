@@ -14,9 +14,9 @@ TODO: Write usage instructions
 ## History
 TODO: Write history
 ## Credits
-</br>
 Designer: Jasmine Chicoine
 </br>
 Developer: Callidora Idsardi 
+
 ## License
 TODO: Write license
