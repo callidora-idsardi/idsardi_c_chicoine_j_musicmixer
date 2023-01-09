@@ -1,4 +1,4 @@
-# ${Our Music Mixer Name}
+# Our Music Mixer Name
 
 TODO: Write a project description
 ## Installation
