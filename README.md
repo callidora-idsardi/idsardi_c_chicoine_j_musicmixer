@@ -1,11 +1,12 @@
 # Our Music Mixer Name
 
-Assignment Description: 
-The focus of this project is to collaboratively research, experiment with and ultimately design
-and build a multimedia application using design and motion tools as well as HTML, CSS and
-JavaScript. Your team will implement drag and drop functionality to load audio clips and create a
-dynamic audio experience, trigger animation, and play a compiled audio track (see
-www.incredibox.com as a reference)
+Welcome to our Music Mixer! This is a multimedia application built using design & motion tools as well as HTML, CSS, and Javascript. The Music Mixer works by dragging & dropping audio clips to effectively: 
+
+- create a relaxing audio experience
+- trigger animations 
+- play a complied audio track. 
+
+~ Enoy!
 
 ## Installation
 TODO: Describe the installation process
