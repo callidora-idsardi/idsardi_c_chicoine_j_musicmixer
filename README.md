@@ -9,10 +9,17 @@ Welcome to our Music Mixer! This is a multimedia application built using design 
 ~ Enjoy!
 
 ## Inspiration 
-(pintrest links)
+(Pinterest links)
 
 ## Installation
 Simply download the zip file and/or clone to your repo. 
+
+## Usage 
+
+Create your own mixed beat by dragging and dropping audio clips into the Mixer.
+- pause/play
+- lower volume 
+- rewind 
 
 ## Contributing
 1. Fork it!
