@@ -21,9 +21,9 @@ TODO: Write usage instructions
 ## History
 TODO: Write history
 ## Credits
-Designer: Jasmine Chicoine
+Designer: [Jasmine Chicoine](https://github.com/jasminechicoine)
 </br>
-Developer: Callidora Idsardi 
+Developer: [Callidora Idsardi](https://github.com/callidora-idsardi)
 
 ## License
 TODO: Write license
