@@ -1,4 +1,4 @@
-# Our Music Mixer Name
+# RELAXIFY!
 
 Welcome to our Music Mixer! This is a multimedia application built using design & motion tools as well as HTML, CSS, and Javascript. The Music Mixer works by dragging & dropping audio clips to effectively: 
 
@@ -9,7 +9,9 @@ Welcome to our Music Mixer! This is a multimedia application built using design 
 ~ Enjoy!
 
 ## Inspiration 
-(Pinterest links)
+https://pin.it/7gtWUfo  
+https://www.pinterest.ca/evelater/music-mixer-ideas/
+
 
 ## Installation
 Simply download the zip file and/or clone to your repo. 
