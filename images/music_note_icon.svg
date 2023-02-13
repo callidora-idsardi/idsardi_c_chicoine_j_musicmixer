@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="music_icon.svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 385">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #19c0db;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #19c0db;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-4 {
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-5 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 13px;
+      }
+
+      .cls-2, .cls-5, .cls-3 {
+        fill: none;
+      }
+
+      .cls-5, .cls-4 {
+        stroke: #88d1e2;
+      }
+
+      .cls-3 {
+        stroke: #a7d8b7;
+        stroke-width: 7px;
+      }
+
+      .cls-4 {
+        fill: #88d1e2;
+      }
+    </style>
+  </defs>
+  <circle class="cls-3" cx="192.5" cy="192.5" r="189"/>
+  <g>
+    <polyline class="cls-5" points="123.12 289.67 123.12 95.87 289.37 57.98 289.37 219.75"/>
+    <ellipse class="cls-4" cx="261.38" cy="218.98" rx="39.66" ry="29.1"/>
+    <ellipse class="cls-4" cx="94.49" cy="289.67" rx="39.66" ry="29.1"/>
+  </g>
+  <g>
+    <polyline class="cls-2" points="130.59 299.5 130.59 103.05 299.11 64.65 299.12 228.63"/>
+    <ellipse class="cls-1" cx="270.74" cy="227.84" rx="40.2" ry="29.49"/>
+    <ellipse class="cls-1" cx="101.57" cy="299.5" rx="40.2" ry="29.49"/>
+  </g>
+</svg>

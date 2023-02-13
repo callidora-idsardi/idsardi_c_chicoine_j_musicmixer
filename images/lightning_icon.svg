@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="lightning_icon.svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 328 328">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        opacity: .19;
+        stroke: #fcfcfc;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #edbed1;
+      }
+
+      .cls-3 {
+        fill: #dd9e8a;
+      }
+    </style>
+  </defs>
+  <path id="right_side" data-name="right side" class="cls-2" d="m180.32.81h0s2.01,118.82,2.01,118.82c.08,4.95,4.12,8.92,9.08,8.92h53.1c6.71,0,11.1,7.03,8.16,13.06l-90.9,186.33c.75.01,1.49.06,2.24.06,90.57,0,164-73.43,164-164,0-77.76-54.13-142.84-126.76-159.71l.52.09"/>
+  <path id="left_side" data-name="left side" class="cls-3" d="m68.97,199.44L166.24.06c-.75-.01-1.49-.06-2.24-.06C73.43,0,0,73.43,0,164c0,76.16,51.93,140.15,122.3,158.6l25.38,4.59-2.16-127.75h-76.55Z"/>
+  <path class="cls-1" d="m191.06,4.47l2.87,113.51h60.02s15.66-.52,15.92,19.57c.26,20.09-95.6,185.53-95.6,185.53"/>
+  <path class="cls-1" d="m129.69,323.09l-2.87-113.51h-60.02s-15.66.52-15.92-19.57S146.49,4.47,146.49,4.47"/>
+</svg>
