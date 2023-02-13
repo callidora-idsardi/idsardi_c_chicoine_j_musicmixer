@@ -10,6 +10,7 @@ Welcome to our Music Mixer! This is a multimedia application built using design 
 
 ## Inspiration 
 https://www.pinterest.ca/jazzychicoine/project-vision-board/
+
 https://www.pinterest.ca/evelater/music-mixer-ideas/
 
 
