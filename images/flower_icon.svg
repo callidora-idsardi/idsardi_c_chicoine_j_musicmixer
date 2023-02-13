@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="flower_icon.svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278 271.57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #edbed1;
+      }
+
+      .cls-2 {
+        fill: #dd9e8a;
+      }
+    </style>
+  </defs>
+  <path id="flower_petal_2" data-name="flower petal 2" class="cls-1" d="m190.61,180.19c95.07,81.81-87.58,145.72-64.26,22.49-23.32,123.23-169.99-2.99-51.61-44.41C-43.65,199.69-7.67,9.56,87.39,91.37-7.67,9.56,174.97-54.35,151.66,68.88c23.32-123.23,169.99,2.99,51.61,44.41,118.38-41.42,82.41,148.71-12.66,66.9Z"/>
+  <circle id="middle_flower" data-name="middle flower" class="cls-2" cx="139" cy="135.78" r="32.41"/>
+</svg>
