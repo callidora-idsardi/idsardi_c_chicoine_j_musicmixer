@@ -135,6 +135,16 @@ margin-top: -380px;
     justify-self: center;
 }
 
+#flower1 {
+    grid-column: 3/3;
+    margin-top: -500px;
+
+}
+
+#flower2 {
+    grid-column: 6/6;
+    margin-top: -500px;
+}
 /* ----Background Image---- */
 
 #main-content {
