@@ -1,0 +1,150 @@
+
+
+/*  ---- General Styles ---- */
+
+@charset "UTF-8";
+/* CSS Document */
+
+#title {
+    grid-column: 4/4;
+    margin-top: -500px;
+    font-size: 67px;
+    color: #523F15;
+}
+
+
+
+div,p,body,header,footer,article,nav { 
+margin: 0; 
+padding: 0; 
+}	
+
+img { 
+border: none; /*Remove border if image is a link*/
+margin: 0; 
+padding: 0; 
+}
+
+/* ----html selectors----*/
+
+body {
+font-family: 'Papyrus';
+font-size: 24px;
+
+}
+
+.hidden {
+display: none;
+}
+
+.container {
+margin: 0 auto;
+width: 1200px;
+}
+
+/* Grid */
+
+.grid-con {
+display: grid;
+grid-template-columns: repeat(8, 82px);
+grid-column-gap: 70px;
+padding-left: 27px;
+padding-right: 27px;
+}
+
+/*  ----Main Content---- */
+
+
+/* Relaxify Title */
+
+#title {
+    grid-column: 4/4;
+    margin-top: -500px;
+    font-size: 67px;
+    color: #523F15;
+}
+
+
+/* Background rectangle that holds all the content inside */
+
+#rectangle {
+    margin: 0;
+  grid-column: 2/2;
+  margin-left: -15px;
+  margin-top: 120px;
+
+}
+
+
+/* Center Brain SVG */
+
+#brain {
+    grid-column: 4/4;
+    margin-top: 280px;
+
+}
+
+
+/* These are the 2 boxes Behind the Icons */
+
+#box1 {
+ grid-column: 3/3;
+ margin-top: -380px;
+}
+
+#box2 {
+grid-column: 6/6;
+margin-top: -380px;
+}
+
+
+/* icons */ 
+#rain {
+ grid-column: 3/3;
+ margin-top: -350px;
+ justify-self: center;
+}
+
+#sun {
+    grid-column: 3/3;
+    margin-top: -275px;
+    justify-self: center;
+}
+
+#storm {
+    grid-column: 3/3;
+    margin-top: -200px;
+    justify-self: center;
+}
+
+#fire {
+    grid-column: 6/6;
+    margin-top: -350px;
+    justify-self: center;
+}
+
+#forest {
+    grid-column: 6/6;
+    margin-top: -275px;
+    justify-self: center;
+}
+
+#waves {
+    grid-column: 6/6;
+    margin-top: -200px;
+    justify-self: center;
+}
+
+/* ----Background Image---- */
+
+#main-content {
+padding-bottom: 130px;
+background-image: url(../images/beach-backdrop.jpg)  ;
+}
+
+
+
+
+
+
+
