@@ -9,15 +9,20 @@
 
     <body>
         <div class="container">
-        <h1 class="hidden">Welcome To Relaxify</h1>
-            <main>
-            
-                <section id="main-content">
+          <h1 class="hidden">Welcome To Relaxify</h1>
+            <main class="grid-con" id="main-con">
+                    <section id="title">
+                        <img src="images/icon-hawaiian-flower.svg" alt="flower icon">
+                        <h2>Relaxify</h2>
+                        <img src="images/icon-hawaiian-flower.svg" alt="flower icon">
+                    </section>
+
+                    <div id="icons-left" class="icons">
+                        <img src="images/icon-rain.svg" alt="rain icon">
+                        <img src="images/icon-sunny-day.svg" alt="sun icon">
+                        <img src="images/icon-lightning.svg" alt="storm icon">
+                    </div>
                     
-                    <h2 class="hidden"> Main Content </h2>
-                    
-                    <div class="grid-con">
-                        <img id="rectangle" src="images/Rectangle.svg" alt="rectangle">
                         <svg id="brain" class="col-end-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230.356" height="272.921" viewbox="0 0 230.356 272.921">
                             <defs>
                             <filter id="floor" x="41.361" y="231.596" width="156.89" height="41.325" filterunits="userSpaceOnUse">
@@ -102,52 +107,19 @@
                             </g>
                             </g>
                         </svg>
-                        <h2 id="title">Relaxify</h2>
+
+                    <div id="icons-right" class="icons">
+                        <img src="images/icon-fire.svg" alt="fire icon">
+                        <img src="images/icon-forest.svg" alt="forest icon">
+                        <img src="images/icon-wave.svg" alt="waves">
                     </div>
 
-                    <div class="grid-con">
-                        <img id="flower1" src="images/icon-hawaiian-flower.svg" alt="flower icon">
-                        <img id="flower2" src="images/icon-hawaiian-flower.svg" alt="flower icon">
-                    </div>
-
-                    <div class="grid-con">
-                        <img id="box1" src="images/icon-rectangle.svg" alt="vertical rectangle">
-                        <img id="box2" src="images/icon-rectangle.svg" alt="vertical rectangle">
-                    </div>
-                    
-                    <div class="grid-con" id="icons-left">
-                        <img id="rain" src="images/icon-rain.svg" alt="rain icon">
-                        <img id="sun" src="images/icon-sunny-day.svg" alt="sun icon">
-                        <img id="storm" src="images/icon-lightning.svg" alt="storm icon">
-                    </div>
-
-                    <div class="grid-con" id="icons-right">
-                        <img id="fire" src="images/icon-fire.svg" alt="fire icon">
-                        <img id="forest" src="images/icon-forest.svg" alt="forest icon">
-                        <img id="waves" src="images/icon-wave.svg" alt="waves">
-                    </div>
-
-                </section>
-
-                <section class="grid-con">
-                    
-                 <section id="audio-controls">
-                    <button id="playButton">PLAY</button>
-                    <button id="pauseButton">STOP</button>
-                    <button id="rewindButton">REWIND</button>
-                </section>
-                  
-                
-                    <input id="volume-slider" type="range" min="0" max="100" step="1">
-
-
-                </section>
-               
-            
-
-
-            
-  
+                    <section id="audio-controls">
+                        <button id="playButton">PLAY</button>
+                        <button id="pauseButton">STOP</button>
+                        <button id="rewindButton">REWIND</button>
+                     </section>
+                     <input id="volume-slider" type="range" min="0" max="100" step="1">
             </main>
         </div>
     </body>
