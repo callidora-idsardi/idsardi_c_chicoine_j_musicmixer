@@ -93,7 +93,7 @@ padding-right: 27px;
   grid-column: 7/7;
 }
 
-#brain {
+.mixer {
   grid-column: 4/7;
 }
 
