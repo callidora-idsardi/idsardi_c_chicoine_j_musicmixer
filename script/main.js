@@ -57,6 +57,8 @@ let musicIcons = document.querySelectorAll(".icons img"),
         // tell the audio element to play
         playAudio();
     }
+
+    
     // tell the audio element to play
     function playAudio() { 
         theAudioEl.play(); 
