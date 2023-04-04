@@ -1,98 +1,107 @@
 let musicIcons = document.querySelectorAll(".icons img"),
-	musicMixer = document.querySelector(".mixer img"),
-    theAudioEl = document.querySelector('audio'),
+    musicMixer = document.querySelector(".mixer img"),
+    audioPlayers = [], // an array to store all the audio players
     playButton = document.querySelector('#playButton'),
     pauseButton = document.querySelector('#pauseButton'),
     rewindButton = document.querySelector('#rewindButton'),
-    volSlider = document.querySelector('#volume-slider'),
+    volSlider = document.querySelector('#volume-slider');
+    introDiv = document.getElementById("intro");
+    closeButton = document.getElementById("closeButton");
 
 
-    // store the dragged piece in a global variable
-	// because we need it in the handleDrop function
-	draggedPiece;
 
-    // --- DRAG & DROP FUNCTIONS ---    
+// --- DRAG & DROP FUNCTIONS ---    
 
-    function handleStartDrag() { 
-        console.log('started dragging this piece:', this);
-    
-        // store a reference to the puzzle piece image that we're dragging
-        // so we can use it later and move it to a drop zone
-        draggedPiece = this;
-    }
-    
-    function handleDragOver(e) { 
-        e.preventDefault(); // e is shorthand for event
-        // this overrides the default dragover behaviour
-        console.log('dragged over me'); 
-    }
-    
-    // --- DRAGGING + DROPPING AUDIO --- 
-    function handleDrop(e) { 
-        e.preventDefault();
-        console.log('dropped something on me');
+function handleStartDrag() { 
+    console.log('started dragging this piece:', this);
 
-        // get the data-trackref attribute of the dragged icon
-        let trackref = draggedPiece.dataset.trackref;
-  
-        // set the src of the audio element to the corresponding audio file
-        theAudioEl.src = `audio/${trackref}.mp3`;
-        
-        // play the audio
-        theAudioEl.play();
-    }
+    // store a reference to the puzzle piece image that we're dragging
+    // so we can use it later and move it to a drop zone
+    draggedPiece = this;
+}
 
-    
+function handleDragOver(e) { 
+    e.preventDefault(); // e is shorthand for event
+    // this overrides the default dragover behaviour
+    console.log('dragged over me'); 
+}
 
-    // --- AUDIO BUTTONS --- 
+// --- DRAGGING + DROPPING AUDIO --- 
+function handleDrop(e) { 
+    e.preventDefault();
+    console.log('dropped something on me');
 
-        // load the new audio source
-        function loadAudio() {
-        let currentSrc = `audio/${this.dataset.trackref}.mp3`;
-        // set the new audio source
-        theAudioEl.src = currentSrc;    
-        // load the new audio source
-        theAudioEl.load();
+    // get the data-trackref attribute of the dragged icon
+    let trackref = draggedPiece.dataset.trackref;
 
-        // tell the audio element to play
-        playAudio();
-    }
+    // create a new audio element
+    let newAudioEl = document.createElement('audio');
+    newAudioEl.src = `audio/${trackref}.mp3`;
+    newAudioEl.volume = volSlider.value/100;
 
-    
-    // tell the audio element to play
-    function playAudio() { 
-        theAudioEl.play(); 
-    }
-    function restartAudio() { 
-        theAudioEl.currentTime = 0; 
-        playAudio(); 
-    }
+    // add the new audio element to the mixer
+    musicMixer.appendChild(newAudioEl);
 
-    function pauseAudio() { theAudioEl.pause(); }
+    // add the new audio element to the array of audio players
+    audioPlayers.push(newAudioEl);
 
-    function setVolume() {
-        // get the numeric value of the volume slider between 0 (min) and 100 (max)
-        // that's what the volume of the audio should be set to
-        console.log(this.value);
+    // play all the audio elements
+    audioPlayers.forEach(function(player) {
+        player.play();
+    });
+}
 
-        // divide the value by 100 to get a floating point number between 0 and 1 -> .5, .85 etc
-        // and then set the audio element's volume level to match
-        theAudioEl.volume = (this.value/100); 
-    }
+// --- AUDIO BUTTONS --- 
 
 
-    // add the drag event handling to the puzzle pieces
-    musicIcons.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
-    musicMixer.addEventListener("dragover", handleDragOver);
-    musicMixer.addEventListener("drop", handleDrop);
+// tell the audio element to play
+function playAudio() { 
+    audioPlayers.forEach(function(player) {
+        player.play();
+    });
+}
+function restartAudio() { 
+    audioPlayers.forEach(function(player) {
+        player.currentTime = 0;
+        player.play();
+    });
+}
 
-    // dropping icon into mixer 
-    musicIcons.forEach(cover => cover.addEventListener('drop', loadAudio));
-    musicMixer.addEventListener('drop', handleDrop);
+function pauseAudio() { 
+    audioPlayers.forEach(function(player) {
+        player.pause();
+    });
+}
 
 
-    // add event handling for the custom controls
-    playButton.addEventListener('click', playAudio);
-    rewindButton.addEventListener('click', restartAudio);
-    pauseButton.addEventListener('click', pauseAudio);
-    volSlider.addEventListener('change', setVolume);
+function setVolume() {
+    // get the numeric value of the volume slider between 0 (min) and 100 (max)
+    // that's what the volume of the audio should be set to
+    console.log(this.value);
+
+    // divide the value by 100 to get a floating point number between 0 and 1 -> .5, .85 etc
+    // and then set the audio element's volume level to match
+    audioPlayers.forEach(function(player) {
+        player.volume = (volSlider.value/100);
+    });
+}
+
+// Exit Instructions Button 
+
+closeButton.addEventListener("click", function() {
+    introDiv.style.display = "none";
+});
+
+
+
+// add the drag event handling to the puzzle pieces
+musicIcons.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
+musicMixer.addEventListener("dragover", handleDragOver);
+musicMixer.addEventListener("drop", handleDrop);
+
+// add event handling for the custom controls
+playButton.addEventListener('click', playAudio);
+rewindButton.addEventListener('click', restartAudio);
+pauseButton.addEventListener('click', pauseAudio);
+volSlider.addEventListener('change', setVolume);
+

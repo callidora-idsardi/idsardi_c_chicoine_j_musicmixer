@@ -2,18 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <title>Relaxify Music Mixer</title>
     <!-- we must link to the css reset or normalize first, then load our main.css file, CHOOSE ONE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 
     <body>
-        <div class="container">
+        <div class="container grid-con">
           <h1 class="hidden">Welcome To Relaxify</h1>
-            <main class="grid-con" id="main-con">
 
+
+            <main class="grid-con" id="main-con">
                 <h2 class="hidden">Audio Tracks</h2>
                 <!-- add audio element here -->
                 <audio src="audio/fire.mp3"></audio>
@@ -50,9 +53,14 @@
                         <button id="playButton">PLAY</button>
                         <button id="pauseButton">STOP</button>
                         <button id="rewindButton">REWIND</button>
+                        <button onclick="location.reload()">RESET</button>
                     </div>
                      <input id="volume-slider" type="range" min="0" max="100" step="1">
-            </main>
+
+                     <div id="intro">
+                        <p>Instructions: Click and drag audio icons into the Brain. Mix and match relaxing ASMR audio files for your very own customizable relaxing experience! PAUSE, PLAY and REWIND to your liking. Hit the RESET button if you would like to make a new audio experience.</p>
+                        <button id="closeButton">START</button>
+                      </div>
         </div>
 
         <script src="script/main.js"></script>
