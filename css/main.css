@@ -16,7 +16,7 @@ border: none; /*Remove border if image is a link*/
 
 
 body {
-font-family: 'Papyrus';
+font-family: 'Alkatra', cursive;
 font-size: 24px;
 }
 
@@ -64,6 +64,27 @@ padding-right: 27px;
   
 }
 
+/* instructions */ 
+
+#intro{
+  backdrop-filter: saturate(100%) blur(100px);
+  background-color: rgba(249, 249, 249, 0.365);
+  grid-column: 2/8;
+  position: relative;
+  bottom: 500px;
+  padding: 30px;
+  line-height: 50px;
+  height: 380px;
+  border-radius: 70px;
+  text-align: center;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.183);
+}
+
+#intro button {
+  margin-top: 40px;
+ 
+}
+
 
 /* using flex box is amazing for positioning! I used flex-direction: column to vertically display the icons*/ 
 
@@ -109,7 +130,7 @@ button {
   border:none;
   outline: none;
   opacity: 80%;
-  font-family: Papyrus;
+  font-family: 'Alkatra', cursive;
   box-shadow: 0 0 5px #31250d;
   width: 60px;
   height: 60px;
@@ -118,14 +139,16 @@ button {
 
 #audio-controls {
   display: flex;
+  align-content: center;
   grid-column: 3/12;
-  margin-left: 140px;
+  margin-left: 100px;
   position: relative;
   bottom:4em;
+  gap:30px;
 }
 
 #audio-controls button {
-  margin-right: 40px;
+  gap: 10px;
 }
 
 
@@ -163,8 +186,8 @@ button {
 .container {
 margin-top: 60px; 
 padding-bottom: 55px;
-background-image: url(../images/beach-backdrop.jpg)  ;
+background-image: url(../images/beach-backdrop.jpg);
 }
 
 
-
+/* position cover */ 
