@@ -1,7 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Relaxify Music Mixer</title>
     <!-- we must link to the css reset or normalize first, then load our main.css file, CHOOSE ONE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +14,7 @@
 </head>
 
     <body>
-        <div class="container grid-con">
+        <div class="container">
           <h1 class="hidden">Welcome To Relaxify</h1>
 
 
@@ -27,7 +29,7 @@
                 <audio src="audio/wind.mp3"></audio>
 
 
-                    <section id="title">
+                    <section class="grid-con" id="title">
                         <img src="images/icon-hawaiian-flower.svg" alt="flower icon">
                         <h2>Relaxify</h2>
                         <img src="images/icon-hawaiian-flower.svg" alt="flower icon">
@@ -57,13 +59,12 @@
                     </div>
                      <input id="volume-slider" type="range" min="0" max="100" step="1">
 
-                     <div id="intro">
+                     <div class="grid-con" id="intro" >
                         <p>Instructions: Click and drag audio icons into the Brain. Mix and match relaxing ASMR audio files for your very own customizable relaxing experience! PAUSE, PLAY and REWIND to your liking. Hit the RESET button if you would like to make a new audio experience.</p>
                         <button id="closeButton">START</button>
                       </div>
+            </main>              
+            <script src="script/main.js"></script>
         </div>
-
-        <script src="script/main.js"></script>
-
     </body>
-</html>
+    </html>
